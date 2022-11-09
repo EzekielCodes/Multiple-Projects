@@ -1,0 +1,136 @@
+********************************************************************************
+***                       Micro-Cap 12.2.0.2 (32 bit)                        ***
+***                                                                          ***
+***                                                                          ***
+***                         Transient Analysis of 9                          ***
+***                           27/10/2020 12:18:32                            ***
+********************************************************************************
+Limits
+======
+Maximum Run Time           20s
+Output Start Time (tstart) 0
+Maximum Time Step          0
+Number of Points           51
+Temperature                Linear 27
+Retrace Runs               1
+Run Options                Normal
+State Variables            Zero
+Operating Point            On
+Operating Point Only       Off
+Auto Scale Ranges          On
+Accumulate Plots           Off
+Fixed Time Step            Off
+Periodic Steady State      Off
+Ignore Expression Errors   Off
+
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1            16.000   2            10.133   X2.90       329.614m 
+X2.31        99.830m  X2.32       553.349u  X2.20       210.825m 
+X2.10        10.014  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:            X2.DF        X2.DR1        X2.DR2
+Using model:      X2.DFMOD      X2.DREV1      X2.DREV2
+
+Capacitance Terms:
+CAP                16.241p        0.000         0.000 
+
+Current Terms:
+ID                 -2.226n       20.302m       23.525m
+
+Resistance Terms:
+REQ                 1.000T      137.936m      320.515m
+
+Voltage Terms:
+VD                -10.133       229.784m      329.060m
+
+Power DC Terms:
+PD                 22.560n        4.665m        7.741m
+PS                  0.000         0.000         0.000 
+
+DC Pin Currents:
+Id                 -2.226n       20.302m       23.525m
+
+Condition:
+State                  OFF           OFF           OFF
+
+Device Variables:
+area                1.000         1.000         1.000 
+ic                  0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1      METER1.R      METER2.R            R2         X2.RL
+Using model:             NA            NA            NA            NA      X2.RLMOD
+V                    5.867        10.133         5.867       -10.133       -10.133 
+Power DC Terms:
+PD                 286.868m      102.673p       34.424p       51.337m        1.301u
+
+DC Pin Currents:
+Ir                  48.893m       10.133p        5.867p       -5.066m     -128.349n
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000         0.000         0.000 
+
+
+Instance:           X2.RBVC
+Using model:     X2.RBVCMOD
+V                   10.014 
+Power DC Terms:
+PD                  10.014m
+
+DC Pin Currents:
+Ir                   1.000m
+
+Device Variables:
+tc1                700.000u
+tc2                  0.000 
+
+
+
+Operating Point for Devices of Type SPICE Poly
+==============================================
+Instance:            X2.ES
+V                   9.803 
+Power DC Terms:
+PG               -429.643m
+
+DC Pin Currents:
+ISource            43.827m
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               V1      METER1.V      METER2.V        X2.VR1        X2.VR2
+V                  16.000         0.000         0.000        99.830m      553.349u
+Power DC Terms:
+PG                782.295m        0.000         0.000        -2.027m      -13.017u
+
+DC Pin Currents:
+ISource           -48.893m       10.133p        5.867p       20.302m       23.525m
+
+
+Instance:         X2.VTRIM       X2.IBVC
+V                 210.825m      -10.014 
+Power DC Terms:
+PG                  0.000        10.014m
+
+DC Pin Currents:
+ISource             0.000         1.000m
+
+

@@ -1,0 +1,136 @@
+********************************************************************************
+***                       Micro-Cap 12.2.0.2 (32 bit)                        ***
+***                                                                          ***
+***                                                                          ***
+***                       Dynamic DC of motorschakelin                       ***
+***                           09/11/2020 10:21:12                            ***
+********************************************************************************
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1           233.286m  2           921.938m  3             9.000  
+4             5.000  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                D1
+Using model:         1N4007
+
+Capacitance Terms:
+CAP                 10.012p
+
+Current Terms:
+ID                 -47.319n
+
+Resistance Terms:
+REQ              200.100MEG
+
+Voltage Terms:
+VD                  -8.767 
+
+Power DC Terms:
+PD                 414.829n
+PS                   0.000 
+
+DC Pin Currents:
+Id                 -47.319n
+
+Condition:
+State                   OFF
+
+Device Variables:
+area                 1.000 
+ic                   0.000 
+
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors NPN
+====================================================================
+Instance:                Q1
+Using model:         BC547B
+
+Beta Terms:
+BETADC              63.059 
+BETAAC             105.704 
+
+Capacitance Terms:
+CPI                  1.917n
+CMU                  1.126n
+CBX                  0.000 
+CJS                  0.000 
+
+Conductance Terms:
+GM                   3.222 
+
+Current Terms:
+IB                   1.854m
+IC                 116.890m
+
+Resistance Terms:
+RPI                 32.806 
+RX                   0.000 
+RO                  16.460 
+
+Voltage Terms:
+VBE                921.938m
+VBC                688.652m
+VCE                233.286m
+
+Frequency Terms:
+FT               168.521MEG
+
+Power DC Terms:
+PD                  28.978m
+PS                   0.000 
+
+DC Pin Currents:
+Ib                   1.854m
+Ic                 116.890m
+Ie                -118.743m
+Is                   0.000 
+
+Condition:
+State                   SAT
+
+Device Variables:
+area                 1.000 
+vbe                  0.000 
+vce                  0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                 R1             R2
+V                    -8.767          4.078 
+Power DC Terms:
+PD                    1.025          7.559m
+
+DC Pin Currents:
+Ir                 -116.890m         1.854m
+
+Device Variables:
+tc1                   0.000          0.000 
+tc2                   0.000          0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                V1             V2
+V                    9.000          5.000 
+Power DC Terms:
+PG                   1.052          9.268m
+
+DC Pin Currents:
+ISource           -116.890m        -1.854m
+
+

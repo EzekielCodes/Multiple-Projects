@@ -1,0 +1,104 @@
+********************************************************************************
+***                       Micro-Cap 12.2.0.2 (32 bit)                        ***
+***                                                                          ***
+***                                                                          ***
+***                        Dynamic DC of belastingKkk                        ***
+***                           08/11/2020 16:05:47                            ***
+********************************************************************************
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1            16.000   2             7.273   X2.90        -2.530  
+X2.31        99.830m  X2.32       553.349u  X2.20       210.825m 
+X2.10        10.014  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:            X2.DF        X2.DR1        X2.DR2
+Using model:      X2.DFMOD      X2.DREV1      X2.DREV2
+
+Capacitance Terms:
+CAP                18.917p        0.000         0.000 
+
+Current Terms:
+ID                 -2.224n       -2.631p       -2.532p
+
+Resistance Terms:
+REQ                 1.000T        1.000T        1.000T
+
+Voltage Terms:
+VD                 -7.273        -2.630        -2.531 
+
+Power DC Terms:
+PD                 16.171n        6.921p        6.409p
+PS                  0.000         0.000         0.000 
+
+DC Pin Currents:
+Id                 -2.224n       -2.631p       -2.532p
+
+Condition:
+State                  OFF           OFF           OFF
+
+Device Variables:
+area                1.000         1.000         1.000 
+ic                  0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1      METER1.R            R3         X2.RL       X2.RBVC
+Using model:             NA            NA            NA      X2.RLMOD    X2.RBVCMOD
+V                    8.727         7.273        -7.273        -7.273        10.014 
+Power DC Terms:
+PD                 634.711m       52.892p      528.925m      669.971n       10.014m
+
+DC Pin Currents:
+Ir                  72.727m        7.273p      -72.727m      -92.121n        1.000m
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000       700.000u
+tc2                  0.000         0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type SPICE Poly
+==============================================
+Instance:            X2.ES
+V                   9.803 
+Power DC Terms:
+PG                 50.617p
+
+DC Pin Currents:
+ISource            -5.163p
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               V1      METER1.V        X2.VR1        X2.VR2      X2.VTRIM
+V                  16.000         0.000        99.830m      553.349u      210.825m
+Power DC Terms:
+PG                  1.164         0.000       262.681f        1.401f        0.000 
+
+DC Pin Currents:
+ISource           -72.727m        7.273p       -2.631p       -2.532p        0.000 
+
+
+Instance:          X2.IBVC
+V                 -10.014 
+Power DC Terms:
+PG                 10.014m
+
+DC Pin Currents:
+ISource             1.000m
+
+

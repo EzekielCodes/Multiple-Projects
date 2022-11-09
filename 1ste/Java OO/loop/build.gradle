@@ -1,0 +1,85 @@
+plugins {
+    id 'groovy'
+    id 'java'
+    id 'org.jetbrains.intellij' version '0.7.2'
+    id 'org.jetbrains.kotlin.js' version '1.4.21'
+    id 'org.jetbrains.kotlin.jvm' version '1.4.21'
+    id 'org.jetbrains.kotlin.multiplatform' version '1.4.21'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-js"
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testImplementation "org.jetbrains.kotlin:kotlin-test-js"
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+// See https://github.com/JetBrains/gradle-intellij-plugin/
+intellij {
+    version '2020.3.1'
+}
+kotlin {
+    /* Targets configuration omitted. 
+    *  To find out how to configure the targets, please follow the link:
+    *  https://kotlinlang.org/docs/reference/building-mpp-with-gradle.html#setting-up-targets */
+
+    sourceSets {
+        commonMain {
+            dependencies {
+                implementation kotlin('stdlib-common')
+            }
+        }
+        commonTest {
+            dependencies {
+                implementation kotlin('test-common')
+                implementation kotlin('test-annotations-common')
+            }
+        }
+    }
+}
+kotlin {
+    js {
+        browser {
+            webpackTask {
+                cssSupport.enabled = true
+            }
+
+            runTask {
+                cssSupport.enabled = true
+            }
+
+            testTask {
+                useKarma {
+                    useChromeHeadless()
+                    webpackConfig.cssSupport.enabled = true
+                }
+            }
+        }
+        binaries.executable()
+    }
+}
+kotlin {
+    js {
+        nodejs {
+        }
+        binaries.executable()
+    }
+}
+patchPluginXml {
+    changeNotes """
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>"""
+}
+test {
+    useJUnitPlatform()
+}

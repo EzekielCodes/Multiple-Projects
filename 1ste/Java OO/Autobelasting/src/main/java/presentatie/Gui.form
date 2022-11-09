@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="presentatie.Gui">
+  <grid id="520af" binding="spacer" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="14" width="660" height="599"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="23" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="1" bottom="1" right="1"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="efa54" class="javax.swing.JTextField" binding="merk">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="7b52b" class="javax.swing.JTextField" binding="model">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="4e67b" class="javax.swing.JTextField" binding="inschrijving">
+            <constraints>
+              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="1c855" class="javax.swing.JTextField" binding="fiscalePK">
+            <constraints>
+              <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="8e40e" class="javax.swing.JTextField" binding="uitstootCO2">
+            <constraints>
+              <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="72e15" class="javax.swing.JTextField" binding="aandrijving">
+            <constraints>
+              <grid row="13" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="51a1c" class="javax.swing.JLabel" binding="merkLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="1" height="1"/>
+                <preferred-size width="166" height="16"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="Merk:"/>
+            </properties>
+          </component>
+          <component id="65bdf" class="javax.swing.JLabel" binding="modelLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="-1" height="1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="Model:"/>
+            </properties>
+          </component>
+          <component id="2542e" class="javax.swing.JLabel" binding="inschrijvingLabel">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="-1" height="1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="Jaar eerste inschrijving:"/>
+            </properties>
+          </component>
+          <component id="bcd08" class="javax.swing.JLabel" binding="euronormLabel">
+            <constraints>
+              <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="-1" height="1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="Euronorm:"/>
+            </properties>
+          </component>
+          <component id="cec40" class="javax.swing.JLabel" binding="fiscalePKLabel">
+            <constraints>
+              <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="-1" height="1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="Fiscale PK:"/>
+            </properties>
+          </component>
+          <component id="10001" class="javax.swing.JLabel" binding="uitstootCO2Label">
+            <constraints>
+              <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="-1" height="1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="CO2-uitstoot"/>
+            </properties>
+          </component>
+          <component id="98749" class="javax.swing.JLabel" binding="aandrijvingLabel">
+            <constraints>
+              <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="-1" height="1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="Aandrijving:"/>
+            </properties>
+          </component>
+          <component id="12606" class="javax.swing.JCheckBox" binding="roetfilter">
+            <constraints>
+              <grid row="15" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="-1" height="1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <label value="Roetfilter"/>
+              <text value="Roetfilter"/>
+            </properties>
+          </component>
+          <component id="c2f9c" class="javax.swing.JButton" binding="bereken">
+            <constraints>
+              <grid row="15" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Bereken"/>
+            </properties>
+          </component>
+          <component id="e3cb0" class="javax.swing.JLabel" binding="labelBIV">
+            <constraints>
+              <grid row="17" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="-1" height="1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="Belasting op inverkeersstelling:"/>
+            </properties>
+          </component>
+          <component id="fe1b1" class="javax.swing.JLabel" binding="labelJVB">
+            <constraints>
+              <grid row="19" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="-1" height="1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="Jaarlijkse verkeersbelasting:"/>
+            </properties>
+          </component>
+          <hspacer id="fffe3">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <vspacer id="7289">
+            <constraints>
+              <grid row="20" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="fc9fb">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="c3606">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="d076d">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="a781e">
+            <constraints>
+              <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="e5667">
+            <constraints>
+              <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="3625f">
+            <constraints>
+              <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="78621">
+            <constraints>
+              <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="352c2">
+            <constraints>
+              <grid row="16" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="3667d">
+            <constraints>
+              <grid row="18" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <component id="e11e5" class="javax.swing.JLabel" binding="bedragBIV">
+            <constraints>
+              <grid row="17" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="29ab4" class="javax.swing.JLabel" binding="bedragJVB">
+            <constraints>
+              <grid row="19" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="d7d4d" class="javax.swing.JLabel" binding="errors">
+            <constraints>
+              <grid row="21" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="-1" height="1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <foreground color="-65536"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <vspacer id="6cfb3">
+            <constraints>
+              <grid row="22" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="72708">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <minimum-size width="-1" height="1"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <component id="bcde4" class="javax.swing.JComboBox" binding="euronormComboBox">
+            <constraints>
+              <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <maximumRowCount value="7"/>
+              <name value="euronorm"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

@@ -1,0 +1,47 @@
+********************************************************************************
+***                       Micro-Cap 12.2.0.2 (64 bit)                        ***
+***                                                                          ***
+***                                                                          ***
+***                         Dynamic AC of weerstand                          ***
+***                           16/10/2020 11:22:53                            ***
+********************************************************************************
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27
+
+AC Voltages at Frequency=400 (Mag, Degrees)
+===========================================
+Node         Voltage 
+1                  1 
+
+
+AC values for Resistor (Mag, Degrees)
+=====================================
+Instance:                   R1         METER2.R
+
+Power AC Terms:
+PD                    227.273u             500f
+
+AC Pin Currents:
+Ir                    454.545u               1p
+
+Device Variables:
+tc1                     0.000            0.000 
+tc2                     0.000            0.000 
+
+
+
+AC values for SPICE Source (Mag, Degrees)
+=========================================
+Instance:                  V1         METER2.V
+
+Power AC Terms:
+PG                   227.273u                0
+
+AC Pin Currents:
+ISource         454.545u,180°               1p
+
+

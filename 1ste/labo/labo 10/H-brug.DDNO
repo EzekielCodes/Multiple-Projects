@@ -1,0 +1,220 @@
+********************************************************************************
+***                       Micro-Cap 12.2.0.2 (32 bit)                        ***
+***                                                                          ***
+***                                                                          ***
+***                           Dynamic DC of H-brug                           ***
+***                           09/11/2020 09:44:48                            ***
+********************************************************************************
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1             0.000   2           222.047n  3             8.707  
+4             9.000   5             8.707   6           637.341m 
+7           -12.296m  8           -12.296m  9           -12.296m 
+10          637.341m  11            8.707   12          222.047n 
+13            8.707   14            0.000  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                D1             D2
+Using model:    LH_N974-TYP    LH_N974-TYP
+
+Capacitance Terms:
+CAP                  0.000          0.000 
+
+Current Terms:
+ID              -6.592E-029     6.592E-029
+
+Resistance Terms:
+REQ                999.981G       999.981G
+
+Voltage Terms:
+VD                  -0.066f         0.066f
+
+Power DC Terms:
+PD               4.345E-045     4.345E-045
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Id              -6.592E-029     6.592E-029
+
+Condition:
+State                   OFF            OFF
+
+Device Variables:
+area                 1.000          1.000 
+ic                   0.000          0.000 
+
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors NPN
+====================================================================
+Instance:                Q1             Q2             Q3             Q4
+Using model:         BC547B         BC547B         BC547B         BC547B
+
+Beta Terms:
+BETADC              -2.408          2.266u         2.266u        -2.408 
+BETAAC              12.840m        82.146         82.146         12.840m
+
+Capacitance Terms:
+CPI                 19.740p        42.631p        42.631p        19.740p
+CMU                  2.816p       257.066p       257.066p         2.816p
+CBX                  0.000          0.000          0.000          0.000 
+CJS                  0.000          0.000          0.000          0.000 
+
+Conductance Terms:
+GM                 255.330f        10.373m        10.373m       255.330f
+
+Current Terms:
+IB                  -6.729p       244.522u       244.522u        -6.729p
+IC                  16.202p       554.108p       554.108p        16.202p
+
+Resistance Terms:
+RPI                 50.289G         7.919K         7.919K        50.289G
+RX                   0.000          0.000          0.000          0.000 
+RO                 851.636G        41.013         41.013        851.636G
+
+Voltage Terms:
+VBE                222.047n       637.341m       637.341m       222.047n
+VBC                 -8.707        649.637m       649.637m        -8.707 
+VCE                  8.707        -12.296m       -12.296m         8.707 
+
+Frequency Terms:
+FT                   1.802m       5.509MEG       5.509MEG         1.802m
+
+Power DC Terms:
+PD                 141.063p       155.844u       155.844u       141.063p
+PS                   0.000          0.000          0.000          0.000 
+
+DC Pin Currents:
+Ib                  -6.729p       244.522u       244.522u        -6.729p
+Ic                  16.202p       554.108p       554.108p        16.202p
+Ie                  -9.473p      -244.523u      -244.523u        -9.473p
+Is                   0.000          0.000          0.000          0.000 
+
+Condition:
+State                   OFF            SAT            SAT            OFF
+
+Device Variables:
+area                 1.000          1.000          1.000          1.000 
+vbe                  0.000          0.000          0.000          0.000 
+vce                  0.000          0.000          0.000          0.000 
+
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors PNP
+====================================================================
+Instance:                Q5             Q6
+Using model:         BC557B         BC557B
+
+Beta Terms:
+BETADC               2.372          2.372 
+BETAAC               4.517          4.517 
+
+Capacitance Terms:
+CPI                 19.030p        19.030p
+CMU                  2.402p         2.402p
+CBX                  0.000          0.000 
+CJS                  0.000          0.000 
+
+Conductance Terms:
+GM                  19.988n        19.988n
+
+Current Terms:
+IB                 233.555p       233.555p
+IC                 554.108p       554.108p
+
+Resistance Terms:
+RPI              225.991MEG     225.991MEG
+RX                   0.000          0.000 
+RO                 162.131G       162.131G
+
+Voltage Terms:
+VBE               -293.419m      -293.419m
+VBC                  8.719          8.719 
+VCE                 -9.012         -9.012 
+
+Frequency Terms:
+FT                 148.430        148.430 
+
+Power DC Terms:
+PD                   5.062n         5.062n
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Ib                -233.555p      -233.555p
+Ic                -554.108p      -554.108p
+Ie                 787.663p       787.663p
+Is                   0.000          0.000 
+
+Condition:
+State                   OFF            OFF
+
+Device Variables:
+area                 1.000          1.000 
+vbe                  0.000          0.000 
+vce                  0.000          0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                 R1             R2             R3             R4
+V                  -222.047n       293.426m         7.707u         8.069 
+Power DC Terms:
+PD                    0.001f        71.749u         1.800f         1.973m
+
+DC Pin Currents:
+Ir                   -6.729p       244.522u       233.555p       244.522u
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:                 R5             R6             R7             R8
+V                     0.203f         8.069       -293.426m        -7.707u
+Power DC Terms:
+PD                6.058E-035         1.973m        71.749u         1.800f
+
+DC Pin Currents:
+Ir                2.985E-019       244.522u      -244.522u      -233.555p
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:                 R9
+V                  -222.047n
+Power DC Terms:
+PD                    0.001f
+
+DC Pin Currents:
+Ir                   -6.729p
+
+Device Variables:
+tc1                   0.000 
+tc2                   0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                V1             V2             V3
+V                    0.000          0.000          9.000 
+Power DC Terms:
+PG                   0.000          0.000          4.401m
+
+DC Pin Currents:
+ISource              6.729p         6.729p      -489.046u
+
+

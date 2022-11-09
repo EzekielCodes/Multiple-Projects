@@ -1,0 +1,16 @@
+projectID,platformID,projecthouderID,start,einde,doelbedrag,categorie,projecttitel
+1,1,4,2018-03-01,2018-05-01,25000,Design,"Van plastic tot iets moois"
+2,1,5,2017-12-01,2018-02-15,900,Technologie,"Pc-lessen voor iedereen"
+3,1,6,2017-10-01,2018-01-30,1500,Gezondheid,"een groene oase in de stad"
+4,1,7,2018-04-15,2018-07-15,18000,Design,designzetels
+5,1,8,2017-05-15,2017-08-15,5000,Technologie,"een slimme ijskast"
+6,2,6,2018-02-15,2018-05-15,15000,Overig,"een zelfportret"
+7,2,9,2018-02-15,2018-06-01,3000,Overig,"een openlucht museum"
+8,2,10,2018-01-01,2018-03-01,1200,Mode,"een spetterende modeshow"
+9,2,11,2017-11-15,2018-01-30,3200,Overig,carnavalwagen
+10,3,12,2016-12-01,2017-03-01,100000,Energie,"slimme meters"
+11,3,12,2018-04-15,2018-07-15,12000,Energie,"nog slimmere meters"
+12,3,13,2018-02-15,2018-06-01,80000,Technologie,"zelfopladende gsm"
+13,3,8,2017-05-01,2017-09-15,5000,Voeding,"mobiele keukens"
+14,3,14,2018-05-01,2018-09-01,15000,Voeding,Kippenkraam
+15,3,15,2017-06-01,2017-10-15,75000,Technologie,"3D printer"

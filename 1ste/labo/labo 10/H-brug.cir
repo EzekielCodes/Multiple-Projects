@@ -1,0 +1,1302 @@
+[Main]
+FileType=CIR
+Version=12.00
+Program=Micro-Cap
+Component Version=10.00
+Shape Version=11.00
+Screen=1920,1080
+MCAPVersion=12.2.0.2
+Key ID=Demo
+NLCnt=81
+TXCnt=1
+
+[shapedef]
+Name=Bjt.root
+Line=0,0,13,0
+Rectangle=13,-12,15,12
+Current=32,-24,32,-16
+Current=32,24,32,16
+Current=0,-8,8,-8
+PolyOpen=3
+PolyLine=24,-24
+PolyLine=24,-12
+PolyLine=14,-2
+PolyOpen=3
+PolyLine=24,24
+PolyLine=24,12
+PolyLine=14,2
+
+[shapedef]
+Name=Bjt_Euro.root
+Ellipse=4,-16,36,16
+FColor=None
+Line=0,0,13,0
+Rectangle=13,-12,15,12
+Current=32,-24,32,-16
+Current=32,24,32,16
+Current=0,-12,8,-12
+PolyOpen=3
+PolyLine=24,24
+PolyLine=24,12
+PolyLine=14,2
+PolyOpen=3
+PolyLine=24,-24
+PolyLine=24,-12
+PolyLine=14,-2
+
+[shapedef]
+Name=Ground
+Line=0,0,12,0
+Line=12,-8,12,8
+Line=18,-4,18,4
+Line=24,0,24,0
+
+[shapedef]
+Name=Ground_Euro
+Line=0,0,12,0
+Line=12,-8,12,8
+
+[shapedef]
+Name=LED2
+Line=22,10,16,16
+Line=30,10,24,16
+PolyClosed=3
+PolyLine=18,18
+PolyLine=14,14
+PolyLine=14,18
+PolyClosed=3
+PolyLine=26,18
+PolyLine=22,14
+PolyLine=22,18
+Line=0,0,20,0
+Line=28,0,48,0
+Rectangle=18,-8,20,8
+PolyClosed=3
+PolyLine=20,0
+PolyLine=28,-8
+PolyLine=28,8
+
+[shapedef]
+Name=NPN
+Root="Bjt.root",0,0,0
+PolyClosed=3
+PolyLine=20,12
+PolyLine=24,12
+PolyLine=24,8
+
+[shapedef]
+Name=NPN_Euro
+PolyClosed=4
+PolyLine=24,8
+PolyLine=24,8
+PolyLine=24,12
+PolyLine=20,12
+Root="Bjt_Euro.root",0,0,0
+
+[shapedef]
+Name=Plus.root
+Line=-2,0,2,0
+Line=0,-2,0,2
+
+[shapedef]
+Name=PNP
+Root="Bjt.root",0,0,0
+PolyClosed=3
+PolyLine=17,-5
+PolyLine=21,-5
+PolyLine=17,-9
+Line=16,-4,14,-2
+Line=16,4,14,2
+
+[shapedef]
+Name=PNP_Euro
+Root="Bjt_Euro.root",0,0,0
+PolyClosed=4
+PolyLine=17,-5
+PolyLine=17,-5
+PolyLine=21,-5
+PolyLine=17,-9
+
+[shapedef]
+Name=Resistor
+PolyOpen=12
+PolyLine=0,0
+PolyLine=0,0
+PolyLine=12,0
+PolyLine=14,-4
+PolyLine=18,4
+PolyLine=22,-4
+PolyLine=26,4
+PolyLine=30,-4
+PolyLine=34,4
+PolyLine=36,0
+PolyLine=48,0
+PolyLine=48,0
+Current=32,8,16,8
+
+[shapedef]
+Name=Resistor_Euro
+Rectangle=12,-4,36,4
+FColor=None
+Line=0,0,12,0
+Line=48,0,36,0
+Current=32,8,16,8
+
+[shapedef]
+Name=SPICE_V
+Root="Vsource.root",0,0,0
+
+[shapedef]
+Name=Vsource.root
+Line=0,0,12,0
+Line=36,0,48,0
+Ellipse=12,-12,36,12
+FColor=None
+Line=7,5,7,9
+Root="Plus.root",41,7,0
+Current=32,16,16,16
+
+[compdef]
+Name=Voltage Source
+Definition=VSpice
+Shape=SPICE_V
+Mask=4865
+Used=63
+memo=Voltage Source
+Label Offset=19,13,15,13
+PinCnt=2
+Pin="Plus",6,0,-5,-6
+Pin="Minus",0,0,-20,-6
+
+[compdef]
+Name=Resistor
+Definition=Resistor
+Shape=Resistor
+Mask=6145
+Used=225
+memo=Resistor
+Label Offset=18,6,8,11
+PinCnt=2
+Pin="Plus",6,0,-10,-4
+Pin="Minus",0,0,-14,-4
+
+[compdef]
+Name=NPN
+Definition=NPN
+Shape=NPN
+Mask=5633
+Used=18
+memo=NPN Transistor
+Label Offset=37,-17,-14,33
+PinCnt=3
+Pin="Collector",3,-3,4,14
+Pin="Base",0,0,-18,-3
+Pin="Emitter",3,3,5,1
+
+[compdef]
+Name=Ground
+Definition=Ground
+Shape=Ground
+Mask=257
+Used=277
+memo=Ground
+Label Offset=0,0,0,0
+PinCnt=1
+Pin="PinA",0,0,-3,-7
+
+[compdef]
+Name=LH_N974-TYP
+Definition=Diode
+Shape=LED2
+Mask=4224
+Used=4
+memo=645nm Hyper Red CHIPLED LED Vf=1.8V If=20mA Pd=80mW
+Label Offset=34,3,11,9
+PinCnt=2
+Pin="Anode",6,0,-12,-1
+Pin="Cathode",0,0,-23,-1
+Power=0.08
+
+[compdef]
+Name=PNP
+Definition=PNP
+Shape=PNP
+Mask=4609
+Used=2
+memo=PNP Transistor
+Label Offset=37,-13,-8,35
+PinCnt=3
+Pin="Collector",3,3,6,3
+Pin="Base",0,0,-19,-3
+Pin="Emitter",3,-3,6,15
+
+[Circuit]
+Window Placement=2,3, -1,-1, -9,-38, 0,0,825,466
+Default Object=Color=#000080
+Default Object Font=Height=-23,FStyle=0,Color=#000080,Name=Arial
+Default Object Apply Border To Text=No
+Default Object Apply Fill To Text=No
+Default Object GridSnap=No
+NodeVoltageFormat=3
+CurrentFormat=3
+PowerFormat=3
+PathDelayFormat=3
+WarningFormat=3
+GridTextFormulaFormat=3
+SpiceType=AMBIGUOUS
+Title_Block_Border=None
+Title_Block=False
+Show Nodes=False
+Show Voltages=True
+Show Current=False
+Show Power=False
+Show Condition=False
+Show Pin Connections=False
+Show Connection Warnings=False
+Show Cross=False
+Show Attribute Text=True
+Show Grid Text=True
+
+[Comp]
+Name=Voltage Source
+Px=488,456
+Rot=5
+
+[Attr]
+ON=15,-38,PART
+V=V1
+Style=8192
+
+[Attr]
+ON=15,-63,VALUE
+V=0
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Attr]
+ON=0,0,SMOOTHING
+V=N
+Style=256
+
+[Attr]
+ON=0,0,Saved_PulseS
+V=N
+Style=256
+
+[Attr]
+ON=0,0,FRACTION
+V=.2
+Style=256
+
+[Attr]
+ON=0,0,Saved_PulseF
+V=.2
+Style=256
+
+[Attr]
+ON=0,0,Saved_Pulse
+V=DC 0 AC 1 0 Pulse 0 5 100n 10n 10n 400n 1u
+Style=256
+
+[Comp]
+Name=Resistor
+Px=616,384
+Rot=2
+
+[Attr]
+ON=-45,-31,PART
+V=R1
+Style=8192
+
+[Attr]
+ON=-56,-56,RESISTANCE
+V=33k
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=488,384,488,408
+
+[Wire]
+Pxs=488,384,568,384
+
+[Comp]
+Name=NPN
+Px=640,384
+
+[Attr]
+ON=-8,11,PART
+V=Q1
+Style=8192
+
+[Attr]
+ON=-118,8,MODEL
+V=BC547B
+
+[Attr]
+ON=-100,58,PACKAGE
+V=TO-92
+
+[Wire]
+Pxs=616,384,640,384
+
+[Comp]
+Name=Resistor
+Px=688,240
+
+[Attr]
+ON=18,6,PART
+V=R2
+Style=8192
+
+[Attr]
+ON=18,31,RESISTANCE
+V=1200
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=664,240,664,336
+
+[Wire]
+Pxs=664,240,688,240
+
+[Comp]
+Name=Resistor
+Px=688,320
+
+[Attr]
+ON=18,6,PART
+V=R3
+Style=8192
+
+[Attr]
+ON=18,31,RESISTANCE
+V=33k
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=688,320,688,336
+
+[Wire]
+Pxs=664,336,688,336
+
+[Wire]
+Pxs=664,336,664,360
+
+[Comp]
+Name=Resistor
+Px=736,392
+Rot=2
+
+[Attr]
+ON=-36,26,PART
+V=R4
+Style=8192
+
+[Attr]
+ON=-42,5,RESISTANCE
+V=33k
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=688,336,688,392
+
+[Comp]
+Name=NPN
+Px=768,392
+
+[Attr]
+ON=2,27,PART
+V=Q2
+Style=8192
+
+[Attr]
+ON=-118,8,MODEL
+V=BC547B
+
+[Attr]
+ON=-100,58,PACKAGE
+V=TO-92
+
+[Wire]
+Pxs=736,392,768,392
+
+[Wire]
+Pxs=736,320,768,320
+
+[Wire]
+Pxs=792,344,792,360
+
+[Wire]
+Pxs=736,240,792,240
+
+[Wire]
+Pxs=792,240,792,296
+
+[Comp]
+Name=Ground
+Px=664,512
+Rot=1
+
+[Wire]
+Pxs=488,456,488,512
+
+[Wire]
+Pxs=488,512,664,512
+
+[Wire]
+Pxs=664,408,664,512
+
+[Wire]
+Pxs=792,416,792,512
+
+[Wire]
+Pxs=664,512,792,512
+
+[Comp]
+Name=LH_N974-TYP
+Px=936,328
+
+[Attr]
+ON=22,-29,PART
+V=D1
+Style=8192
+
+[Attr]
+ON=34,28,MODEL
+V=LH_N974-TYP
+
+[Attr]
+ON=34,53,POWER
+V=0.08
+
+[Attr]
+ON=34,103,PACKAGE
+V=1206
+
+[Comp]
+Name=LH_N974-TYP
+Px=984,400
+Rot=2
+
+[Attr]
+ON=-27,8,PART
+V=D2
+Style=8192
+
+[Attr]
+ON=34,28,MODEL
+V=LH_N974-TYP
+
+[Attr]
+ON=34,53,POWER
+V=0.08
+
+[Attr]
+ON=34,103,PACKAGE
+V=1206
+
+[Wire]
+Pxs=912,328,936,328
+
+[Wire]
+Pxs=912,328,912,360
+
+[Wire]
+Pxs=912,400,936,400
+
+[Wire]
+Pxs=984,328,1032,328
+
+[Wire]
+Pxs=1032,328,1032,368
+
+[Wire]
+Pxs=984,400,1032,400
+
+[Wire]
+Pxs=792,360,912,360
+
+[Wire]
+Pxs=792,360,792,368
+
+[Wire]
+Pxs=912,360,912,400
+
+[Comp]
+Name=Resistor
+Px=1112,368
+Rot=2
+
+[Attr]
+ON=-45,-31,PART
+V=R5
+Style=8192
+
+[Attr]
+ON=-57,-56,RESISTANCE
+V=680
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1032,368,1064,368
+
+[Wire]
+Pxs=1032,368,1032,400
+
+[Comp]
+Name=NPN
+Px=1136,448
+Rot=6
+
+[Attr]
+ON=-17,24,PART
+V=Q3
+Style=8192
+
+[Attr]
+ON=-118,8,MODEL
+V=BC547B
+
+[Attr]
+ON=-100,58,PACKAGE
+V=TO-92
+
+[Wire]
+Pxs=1112,368,1112,424
+
+[Wire]
+Pxs=1112,472,1112,512
+
+[Wire]
+Pxs=792,512,1112,512
+
+[Comp]
+Name=Resistor
+Px=1168,448
+
+[Attr]
+ON=18,6,PART
+V=R6
+Style=8192
+
+[Attr]
+ON=18,31,RESISTANCE
+V=33k
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=NPN
+Px=1312,432
+Rot=6
+
+[Attr]
+ON=-16,20,PART
+V=Q4
+Style=8192
+
+[Attr]
+ON=-118,8,MODEL
+V=BC547B
+
+[Attr]
+ON=-100,58,PACKAGE
+V=TO-92
+
+[Comp]
+Name=Resistor
+Px=1176,240
+
+[Attr]
+ON=18,6,PART
+V=R7
+Style=8192
+
+[Attr]
+ON=7,-33,RESISTANCE
+V=1200
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=PNP
+Px=768,320
+
+[Attr]
+ON=40,9,PART
+V=Q5
+Style=8192
+
+[Attr]
+ON=-118,-37,MODEL
+V=BC557B
+
+[Attr]
+ON=-141,-87,PACKAGE
+V=TO-226AA
+
+[Comp]
+Name=PNP
+Px=1136,288
+Rot=6
+
+[Attr]
+ON=-18,19,PART
+V=Q6
+Style=8192
+
+[Attr]
+ON=-118,-37,MODEL
+V=BC557B
+
+[Attr]
+ON=-141,-87,PACKAGE
+V=TO-226AA
+
+[Wire]
+Pxs=1112,312,1112,368
+
+[Wire]
+Pxs=1112,240,1112,264
+
+[Wire]
+Pxs=792,240,984,240
+
+[Wire]
+Pxs=1112,240,1176,240
+
+[Comp]
+Name=Resistor
+Px=1160,288
+
+[Attr]
+ON=18,6,PART
+V=R8
+Style=8192
+
+[Attr]
+ON=15,21,RESISTANCE
+V=33k
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1136,288,1160,288
+
+[Wire]
+Pxs=1136,448,1168,448
+
+[Wire]
+Pxs=1208,288,1240,288
+
+[Wire]
+Pxs=1240,288,1240,368
+
+[Wire]
+Pxs=1216,448,1240,448
+
+[Wire]
+Pxs=1288,368,1288,408
+
+[Wire]
+Pxs=1240,368,1288,368
+
+[Wire]
+Pxs=1240,368,1240,448
+
+[Wire]
+Pxs=1224,240,1288,240
+
+[Wire]
+Pxs=1288,240,1288,368
+
+[Wire]
+Pxs=1288,456,1288,512
+
+[Wire]
+Pxs=1112,512,1288,512
+
+[Comp]
+Name=Resistor
+Px=1360,432
+
+[Attr]
+ON=18,6,PART
+V=R9
+Style=8192
+
+[Attr]
+ON=18,31,RESISTANCE
+V=33k
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1312,432,1360,432
+
+[Comp]
+Name=Voltage Source
+Px=1464,496
+Rot=5
+
+[Attr]
+ON=15,-38,PART
+V=V2
+Style=8192
+
+[Attr]
+ON=15,-63,VALUE
+V=0
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1408,432,1464,432
+
+[Wire]
+Pxs=1464,432,1464,448
+
+[Wire]
+Pxs=1464,496,1464,512
+
+[Wire]
+Pxs=1288,512,1464,512
+
+[Comp]
+Name=Voltage Source
+Px=1528,352
+Rot=3
+
+[Attr]
+ON=-42,-38,PART
+V=V3
+Style=8192
+
+[Attr]
+ON=-28,-63,VALUE
+V=9
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1528,352,1528,512
+
+[Wire]
+Pxs=1464,512,1528,512
+
+[Wire]
+Pxs=1528,112,1528,304
+
+[Wire]
+Pxs=984,112,1528,112
+
+[Wire]
+Pxs=984,112,984,240
+
+[Wire]
+Pxs=984,240,1112,240
+
+[Node Offsets]
+Section=0
+;Node,Page,GridX,GridY,OffsetX,OffsetY
+Offset=5,0,736,320,-21,-12
+
+[Grid Text]
+Text="Dynamic DC"
+Text="Temperature=27"
+Text="Displaying DC Voltages"
+Text="PGT = Total power generated = [PGT]"
+Text="PDT = Total power dissipated = [PDT]"
+BannerDC=True
+Px=16,167
+Height=-23
+Color=#800000
+Font=Arial
+GridSnap=False
+JustifyH=Left
+JustifyV=Bottom
+Formula=True
+CFill=#C0C0C0
+CBorder=#000000
+
+[Schematic]
+CurrentSection 0=0
+CurrentSection 1=0
+CurrentSection 2=0
+CurrentSection 3=0
+Splitter.xs=0
+Splitter.ys=0
+TextQuad=4099
+Scale=1
+GridUser=10
+ShapeGroups="Euro","Main","Polarity","Main1","Main11","Electrolytic","GroundArrow","DeMorgan"
+CalcRMS=False
+CalcAVG=False
+CalcPeak=False
+CalcVoltage=True
+DisplayMeasure=Last
+ShareScales=True
+
+[Tools]
+Pos=Top
+FILESAVEASOLD=No
+BOM=No
+FILEPCB=No
+PROBE=Yes
+SELECT=Yes
+PAN=Yes
+COMP=Yes
+TEXT=Yes
+WIRE=Yes
+WIRED=Yes
+BUS=Yes
+GRAPHIC=Yes
+FLOWCHART=Yes
+LINE=No
+ELLIPSE=No
+RECT=No
+DIAM=No
+ARC=No
+PIE=No
+TRIANGLE=No
+STAR=No
+LEFTBRK=No
+RIGHTBRK=No
+BOTHBRK=No
+META=Yes
+PARALLELOGRAM=No
+FC_PROCESS=No
+FC_ALT_PROCESS=No
+FC_DECISION=No
+FC_DATA=No
+FC_PREDEFPROCESS=No
+FC_INTERNALSTORAGE=No
+FC_DOCUMENT=No
+FC_MULTIDOCUMENT=No
+FC_TERMINATOR=No
+FC_PREPARATION=No
+FC_MANUALINPUT=No
+FC_MANUALOPERATION=No
+FC_CONNECTOR=No
+FC_OFFPAGECONNECTOR=No
+FC_PUNCHCARD=No
+FC_PUNCHEDTAPE=No
+FC_SUMMING_JUNCTION=No
+FC_OR=No
+FC_COLLATE=No
+FC_SORT=No
+FC_EXTRACT=No
+FC_MERGE=No
+FC_STORED_DATA=No
+FC_DELAY=No
+FC_SAS=No
+FC_MAGNETIC_DISK=No
+FC_DAS=No
+FC_DISPLAY=No
+SPREAD_SHEET=Yes
+POLYCLOS=No
+POLYOPEN=No
+FLAG=Yes
+INFO=Yes
+HELP=Yes
+HELP_SPICE=No
+LINK=Yes
+CHECK=Yes
+REGION_ENABLE=Yes
+TITLE_BLOCK=Yes
+DIGTRC=No
+DIGTRC2=No
+BUILD_COMMAND=Yes
+DIGALL=No
+GRIDTEXT=Yes
+COMPTEXT=Yes
+NODE=Yes
+MEASURED=Yes
+NODEV=Yes
+CURRENT=Yes
+POWER=Yes
+CONDITIN=Yes
+PIN=Yes
+CONNWARN=Yes
+CROSS=Yes
+GRID=Yes
+BORDER=Yes
+BORDERONE=Yes
+TITLE=Yes
+RUBBER=Yes
+PROPERTY=Yes
+STEP=Yes
+MIRROR=Yes
+ROTATE=Yes
+FLIPY=Yes
+FLIPX=Yes
+CIR_MAKEMACRO=No
+CLEARCUTWIRE=No
+CLIPBOARDCIRPAGE2BMM=No
+FINDCOMP=Yes
+FIND=Yes
+REPEAT=No
+REPLACE=No
+MODEL=Yes
+CIR2CKT=Yes
+ATTDISP=Yes
+ENABLE=Yes
+DISABLE=Yes
+ENABLE_WITH=Yes
+TOFRONT=Yes
+TOBACK=Yes
+SELNEXT=Yes
+PAGEADD=Yes
+PAGEADDTEXT=No
+ADDSECTION=No
+PAGEDEL=Yes
+ZOOMIN=Yes
+ZOOMOUT=Yes
+AUTOSCALECIR=Yes
+GOTOFLAG=Yes
+UPLEVEL=Yes
+COLOR=Yes
+FONT=Yes
+STYLE=Yes
+DM_LAST=No
+DM_RMS=No
+DM_AVG=No
+DM_PEAK=No
+GRID_NONE=No
+GRID_NORMAL=No
+GRID_BOLD_5=No
+GRID_BOLD_6=No
+GRID_BOLD_USER=No
+GRAPH_PAPER=No
+SPLITCIRTEXTH=No
+SPLITCIRTEXTV=No
+SPACE_SPLITTERS_EVENLY=No
+NORMALCIR=No
+RENAMEDEFINE=No
+RENAMECMP=No
+ATTALIGN=No
+RESETNODEPOS=No
+FIT2STANDARD=No
+NODESNAP=No
+MOVETEXT=No
+TEXTINC=No
+TOGGLETEXT=No
+TOGGLEMODE=No
+TOLERANCE=No
+ALIGNAB=No
+ALIGNLEFT=Yes
+ALIGNCENTER=Yes
+ALIGNRIGHT=Yes
+ALIGNTOP=Yes
+ALIGNMIDDLES=Yes
+ALIGNBOTTOM=Yes
+
+[Section]
+Index=0
+Name="H-brug"
+Type=Main
+Enable=True
+CurrentPage 0=0
+CurrentPage 1=0
+CurrentPage 2=0
+CurrentPage 3=0
+TabSize 0=525
+TabSize 1=525
+TabSize 2=525
+TabSize 3=525
+
+[Page]
+Index=0
+Section=0
+Print=True
+Enable=True
+Name=Main
+PrinterScale=1
+Scale 0=1
+Scale 1=1
+Scale 2=1
+Scale 3=1
+Px=1040,583
+WinBackGround Color=#FFFFFF
+Select Color=#FF0000
+Anchor Color=#000000
+Select Box Color=#000080
+Grid Text Color=Height=-20,FStyle=0,Color=#0000FF,Name=Verdana
+Grid Text RTF=False
+Grid Text Angle=0
+Grid Text GridSnap=True
+Grid Text PinIt=False
+Grid Text JustifyH=Left
+Grid Text JustifyV=Bottom
+Grid GradientColor2=None
+Grid OutlineThickness=1
+Grid OutlineColor=None
+Component Color=#0000FF
+Attribute Text=Height=-20,FStyle=0,Color=#008000,Name=Verdana
+Wire Color=#008000
+Bus Color=#008000
+Pin Connection=Height=-15,FStyle=0,Color=#FF0000,Name=Arial
+Pin Marker Color=#008000
+Node Number=Height=-17,FStyle=0,Color=#FF00FF,Name=Arial
+Node Voltage Color=Height=-17,FStyle=0,Color=#000000,Name=Arial
+Dynamic AC Voltage Color=#E4E4E4
+Text Banner Text=Height=-23,FStyle=0,Color=#800000,Name=Arial
+Title Block Background=#C0C0C0
+Current=Height=-17,FStyle=0,Color=#0000FF,Name=Arial
+Power/Condition=Height=-17,FStyle=0,Color=#FF0000,Name=Arial
+Digital Path Color=#FF0000
+Title Block Border=#000000
+Disabled	Color=#C0C0C0
+Search Color=#FFFF00
+Grid Color=#000000
+Graph Paper=#E4E4E4
+Digital 0 Color=#000000
+Digital R Color=#FFFF00
+Digital F Color=#FFFF00
+Digital 1 Color=#FF0000
+Digital X Color=#C0C0C0
+Digital Z Color=#808080
+Block Select Color=#51F998
+
+[Page]
+Index=1
+Section=0
+Type=Text
+Print=False
+Enable=True
+Name=Text
+Font=Height=-23,FStyle=0,Color=#000000,Name=Courier New
+Comment Color=#008000
+WinBackGround Color=#FFFFFF
+Disabled	Color=#C0C0C0
+KeyWord Color=#0000FF
+Error	Color=#FF0000
+Search Color=#FFFF00
+
+[Page]
+Index=2
+Section=0
+Type=Text
+Print=False
+Enable=True
+Name=Models
+SB 0=64,28
+Font=Height=-23,FStyle=0,Color=#000000,Name=Courier New
+Comment Color=#008000
+WinBackGround Color=#FFFFFF
+Disabled	Color=#C0C0C0
+KeyWord Color=#0000FF
+Error	Color=#FF0000
+Search Color=#FFFF00
+
+[Page]
+Index=3
+Section=0
+Type=Info
+Print=False
+Enable=True
+Name=Info
+Font=Height=-23,FStyle=0,Color=#000000,Name=Courier New
+Comment Color=#008000
+WinBackGround Color=#FFFFFF
+Disabled	Color=#C0C0C0
+KeyWord Color=#0000FF
+Error	Color=#FF0000
+Search Color=#FFFF00
+
+[Text Area]
+Section=0
+Page=1
+
+[Text Area]
+Section=0
+Page=2
+Text=* Schematic File
+Text=*
+Text=* Syntax:
+Text=* .MODEL <model name> [AKO:<reference model name>] <ModelType>
+Text=* +([<parameter name>=<value>][LOT[/#][/GAUSS|/UNIFORM|/WCASE]=[<tol>[%]] |[-<low>%,<high>%]][DEV[/#][/GAUSS|/UNIFORM|/WCASE]=[<tol>[%]]...)
+Text=* ModelType must be one of OPA,D,NPN,NMOS,NJF,PUL,SIN,TRN,CORE,GASFET,VSWITCH,ISWITCH,CAP,IND,RES,PNP,PMOS,PJF,DOUTPUT,DINPUT,UADC,UDAC,UGATE,UTGATE,UEFF,UGFF,UDLY,UPLD,UROM,URAM,UBGT,UIO,LPNP,NIGBT,I,V
+Text=*
+Text=*Examples:
+Text=* .MODEL 2N2222A NPN(BF=150 IS=1E-14)
+Text=* .model M1 NMOS(KP=2.5E-5 VTO=1.345 CGDO=14.67p CGBO=4.566p)
+Text=* .MODEL DK D(IS=1E-18)
+Text=* .model 2N2222A AKO:2N2222 NPN (BF=55 ISE=10F)
+Text=* .Model BJT1 NPN (RE=12 LOT/1/GAUSS=30% DEV/2/UNIFORM=2%)
+Text=*
+Text=* A .cir file is typically found in the data directory
+Text=*
+Text=*** From file D:\library\MSBJT.LBR
+Text=*** PNP Switching transistor
+Text=.MODEL 2N869A PNP (BF=184.118 BR=5 CJC=19.8997p CJE=8.48476p IKF=1.01737
+Text=+ IKR=992.804 IS=10.055f ISC=.0266619f ISE=46.0558f ITF=9.11617m MJC=571.783m
+Text=+ MJE=642.884m NE=2 NF=1.53448 RE=2 TF=235.325p TR=26.2068n VAF=100
+Text=+ VJC=700.228m VJE=700m VTF=10 XTF=500.002m)
+Text=*** From file D:\library\EUROPE.LBR
+Text=*** PNP General Purpose Transistor
+Text=.MODEL BC160-10 PNP (BF=115.010452 BR=97.391576m CJC=137.414455p
+Text=+ CJE=254.540389p IKF=211.104423m IKR=1.165085 IS=9.995674f ISC=.0002760012f
+Text=+ ISE=988.820896f ITF=11.078837m MJC=558.067322m MJE=642.866194m NE=1.797477
+Text=+ NF=1.004494 RC=229.222551m RE=162.485197m TF=2.260778n TR=10n VAF=100
+Text=+ VJC=699.999988m VJE=699.999988m VTF=10.000002 XTF=500.030577m)
+
+[InfoPage]
+InfoPage=True
+Warnings=True
+System=True
+Defines=True
+Array=True
+Model=True
+Measure=True
+MacroSubckt=True
+NotUsed=True
+ComponentCounts=True
+VariablizePaths=False
+DontShowPaths=False
+SimulationLog=True
+
+[Limits]
+Analysis=DynamicAC
+FirstValueDisplay=Mag
+SecondValueDisplay=PhaseDeg
+PlaceText=True
+
+[Limits]
+Analysis=DynamicDC
+Temp=27
+SliderPer=10
+PlaceText=True
+
+[Pane]
+Analysis=Transient
+
+[Pane]
+Analysis=AC
+
+[Pane]
+Analysis=DC
+
+[Pane]
+Analysis=HmDistortion
+
+[Pane]
+Analysis=ImDistortion
+
+[Pane]
+Analysis=Stability
+
+[WCTolerance]
+Var Width=125
+Nominal Width=90
+Tol Width=190
+Tol Name=Drift
+Col Width Neq=63
+Col Width Pos=63
+Col Width Rnd=63
+
+[WCFiles]
+UseFile=<Library>Standard.tlib
+AVAILABLE_FILE=<Library>Standard.tlib
+
+[OPMethods]
+Analysis=Transient
+Standard Newton-Raphson=0,0
+Source Stepping=0,0
+Diagonal Gmin Stepping=0,0
+Junction Gmin Stepping=0,0
+Pseudo Transient=0,0
+
+[OPMethods]
+Analysis=AC
+Standard Newton-Raphson=0,0
+Source Stepping=0,0
+Diagonal Gmin Stepping=0,0
+Junction Gmin Stepping=0,0
+Pseudo Transient=0,0
+
+[OPMethods]
+Analysis=DC
+Standard Newton-Raphson=0,0
+Source Stepping=0,0
+Diagonal Gmin Stepping=0,0
+Junction Gmin Stepping=0,0
+Pseudo Transient=0,0
+
+[OPMethods]
+Analysis=HmDistortion
+Standard Newton-Raphson=0,0
+Source Stepping=0,0
+Diagonal Gmin Stepping=0,0
+Junction Gmin Stepping=0,0
+Pseudo Transient=0,0
+
+[OPMethods]
+Analysis=ImDistortion
+Standard Newton-Raphson=0,0
+Source Stepping=0,0
+Diagonal Gmin Stepping=0,0
+Junction Gmin Stepping=0,0
+Pseudo Transient=0,0
+
+[OPMethods]
+Analysis=Stability
+Standard Newton-Raphson=0,0
+Source Stepping=0,0
+Diagonal Gmin Stepping=0,0
+Junction Gmin Stepping=0,0
+Pseudo Transient=0,0
+
+[OPMethods]
+Analysis=DynamicAC
+Standard Newton-Raphson=0,0
+Source Stepping=0,0
+Diagonal Gmin Stepping=0,0
+Junction Gmin Stepping=0,0
+Pseudo Transient=0,0
+
+[OPMethods]
+Analysis=DynamicDC
+Standard Newton-Raphson=0,0
+Source Stepping=0,0
+Diagonal Gmin Stepping=0,0
+Junction Gmin Stepping=0,0
+Pseudo Transient=0,0

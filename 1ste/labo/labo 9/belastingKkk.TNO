@@ -1,0 +1,122 @@
+********************************************************************************
+***                       Micro-Cap 12.2.0.2 (32 bit)                        ***
+***                                                                          ***
+***                                                                          ***
+***                    Transient Analysis of belastingKkk                    ***
+***                           23/10/2020 20:35:15                            ***
+********************************************************************************
+Limits
+======
+Maximum Run Time           50s
+Output Start Time (tstart) 0
+Maximum Time Step          0
+Number of Points           51
+Temperature                Linear 27
+Retrace Runs               1
+Run Options                Normal
+State Variables            Zero
+Operating Point            On
+Operating Point Only       Off
+Auto Scale Ranges          On
+Accumulate Plots           Off
+Fixed Time Step            Off
+Periodic Steady State      Off
+Ignore Expression Errors   Off
+
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1            16.000   2            10.119   X2.90       315.980m 
+X2.31        99.830m  X2.32       553.349u  X2.20       210.825m 
+X2.10        10.014  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:            X2.DF        X2.DR1        X2.DR2
+Using model:      X2.DFMOD      X2.DREV1      X2.DREV2
+
+Capacitance Terms:
+CAP                16.251p        0.000         0.000 
+
+Current Terms:
+ID                 -2.226n       18.418m       20.470m
+
+Resistance Terms:
+REQ                 1.000T      152.046m      368.351m
+
+Voltage Terms:
+VD                -10.119       216.150m      315.426m
+
+Power DC Terms:
+PD                 22.529n        3.981m        6.457m
+PS                  0.000         0.000         0.000 
+
+DC Pin Currents:
+Id                 -2.226n       18.418m       20.470m
+
+Condition:
+State                  OFF           OFF           OFF
+
+Device Variables:
+area                1.000         1.000         1.000 
+ic                  0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1      METER1.R            R2         X2.RL       X2.RBVC
+Using model:             NA            NA            NA      X2.RLMOD    X2.RBVCMOD
+V                    5.881        10.119       -10.119       -10.119        10.014 
+Power DC Terms:
+PD                 288.203m      102.397p      102.397m        1.297u       10.014m
+
+DC Pin Currents:
+Ir                  49.007m       10.119p      -10.119m     -128.176n        1.000m
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000       700.000u
+tc2                  0.000         0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type SPICE Poly
+==============================================
+Instance:            X2.ES
+V                   9.803 
+Power DC Terms:
+PG               -381.223m
+
+DC Pin Currents:
+ISource            38.888m
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               V1      METER1.V        X2.VR1        X2.VR2      X2.VTRIM
+V                  16.000         0.000        99.830m      553.349u      210.825m
+Power DC Terms:
+PG                784.113m        0.000        -1.839m      -11.327u        0.000 
+
+DC Pin Currents:
+ISource           -49.007m       10.119p       18.418m       20.470m        0.000 
+
+
+Instance:          X2.IBVC
+V                 -10.014 
+Power DC Terms:
+PG                 10.014m
+
+DC Pin Currents:
+ISource             1.000m
+
+

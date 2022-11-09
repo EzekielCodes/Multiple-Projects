@@ -1,0 +1,46 @@
+********************************************************************************
+***                       Micro-Cap 12.2.0.2 (64 bit)                        ***
+***                                                                          ***
+***                                                                          ***
+***                        Dynamic AC of condensator                         ***
+***                           15/10/2020 13:40:40                            ***
+********************************************************************************
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27
+
+AC Voltages at Frequency=1e+006 (Mag, Degrees)
+==============================================
+Node         Voltage 
+1                  1 
+
+
+AC values for Capacitor (Mag, Degrees)
+======================================
+Instance:                C1
+
+Power AC Terms:
+PS               1.477,-90°
+
+AC Pin Currents:
+Ic                2.953,90°
+
+Device Variables:
+ic                   0.000 
+
+
+
+AC values for SPICE Source (Mag, Degrees)
+=========================================
+Instance:               V1
+
+Power AC Terms:
+PG              1.477,-90°
+
+AC Pin Currents:
+ISource         2.953,-90°
+
+

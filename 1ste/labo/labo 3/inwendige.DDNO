@@ -1,0 +1,61 @@
+********************************************************************************
+***                       Micro-Cap 12.2.0.2 (32 bit)                        ***
+***                                                                          ***
+***                                                                          ***
+***                         Dynamic DC of inwendige                          ***
+***                           07/10/2020 12:23:58                            ***
+********************************************************************************
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1             1.500   2             3.000   3             0.000  
+4             0.000  
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1            R2            R5      METER2.R      METER5.R
+V                   -1.500        -1.500        -1.500         1.500         0.000 
+Power DC Terms:
+PD                 225.000m      225.000m      225.000n        2.250p        0.000 
+
+DC Pin Currents:
+Ir                -150.000m     -150.000m     -150.000n        1.500p        0.000 
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000         0.000         0.000 
+
+
+Instance:        METER5.int    METER5.int    METER5.int
+V                    0.000         0.000         0.000 
+Power DC Terms:
+PD                   0.000         0.000         0.000 
+
+DC Pin Currents:
+Ir                   0.000         0.000         0.000 
+
+Device Variables:
+tc1                  0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               V1      METER2.V      METER5.V
+V                   3.000         0.000         0.000 
+Power DC Terms:
+PG                450.000m        0.000         0.000 
+
+DC Pin Currents:
+ISource          -150.000m        1.500p        0.000 
+
+

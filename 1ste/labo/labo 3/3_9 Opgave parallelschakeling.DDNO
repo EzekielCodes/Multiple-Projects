@@ -1,0 +1,74 @@
+********************************************************************************
+***                       Micro-Cap 12.2.0.2 (32 bit)                        ***
+***                                                                          ***
+***                                                                          ***
+***               Dynamic DC of 3_9 Opgave parallelschakeling                ***
+***                           07/10/2020 12:22:32                            ***
+********************************************************************************
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1            10.411   2            10.666   3            10.881  
+4            10.990   5            12.000  
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1            R2            R3            R4            R5
+V                  -10.411       -10.666       -10.881      -578.407m     -323.232m
+Power DC Terms:
+PD                 602.176m      344.758m      118.390m       33.455m       10.448m
+
+DC Pin Currents:
+Ir                 -57.840m      -32.322m      -10.881m      -57.841m      -32.323m
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000         0.000         0.000 
+
+
+Instance:                R6            R7      METER1.R      METER2.R      METER3.R
+V                 -108.818m        1.010        10.411        10.666        10.881 
+Power DC Terms:
+PD                   1.184m      102.102m      108.392p      113.770p      118.390p
+
+DC Pin Currents:
+Ir                 -10.882m      101.046m       10.411p       10.666p       10.881p
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000         0.000         0.000 
+
+
+Instance:          METER4.R            R8            R9           R10
+V                    1.010       -10.411       -10.666       -10.881 
+Power DC Terms:
+PD                   1.021p       10.839u       11.377u       11.839u
+
+DC Pin Currents:
+Ir                   1.010p       -1.041u       -1.067u       -1.088u
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               V1      METER1.V      METER2.V      METER3.V      METER4.V
+V                  12.000         0.000         0.000         0.000         0.000 
+Power DC Terms:
+PG                  1.213         0.000         0.000         0.000         0.000 
+
+DC Pin Currents:
+ISource          -101.046m       10.411p       10.666p       10.881p        1.010p
+
+

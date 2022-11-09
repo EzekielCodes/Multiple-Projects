@@ -1,0 +1,60 @@
+********************************************************************************
+***                       Micro-Cap 12.2.0.2 (64 bit)                        ***
+***                                                                          ***
+***                                                                          ***
+***                          Dynamic DC of Vdeel_B                           ***
+***                           01/10/2020 15:57:28                            ***
+********************************************************************************
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27
+
+DC Operating Point Voltages
+===========================
+Node         Voltage 
+1            12.000  
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1            R2            R3      METER1.R      METER2.R
+V                   12.000        12.000        12.000        12.000        12.000 
+Power DC Terms:
+PD                 800.000m      436.364m      144.000m      144.000p      144.000p
+
+DC Pin Currents:
+Ir                  66.667m       36.364m       12.000m       12.000p       12.000p
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000         0.000         0.000 
+
+
+Instance:          METER3.R      METER4.R
+V                   12.000        12.000 
+Power DC Terms:
+PD                 144.000p      144.000p
+
+DC Pin Currents:
+Ir                  12.000p       12.000p
+
+Device Variables:
+tc1                  0.000         0.000 
+tc2                  0.000         0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               V1      METER1.V      METER2.V      METER3.V      METER4.V
+V                  12.000         0.000         0.000         0.000         0.000 
+Power DC Terms:
+PG                  1.380         0.000         0.000         0.000         0.000 
+
+DC Pin Currents:
+ISource          -115.030m       12.000p       12.000p       12.000p       12.000p
+
+
